@@ -1,0 +1,403 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Noto+Sans+KR&family=Shadows+Into+Light&display=swap');
+
+/*메인페이지에서 공통구역을 제외한 본문구역 스타일*/
+
+#main .slideouter {
+    height:500px;
+    overflow:hidden;
+}
+/* ctrl ? */
+
+#main .slide1 {
+    background-image: url(../images/choco-dream.jpg);
+    height:500px;
+    background-size: cover;
+}
+#main .slide2 {
+    background-image: url(../images/bg11.png); 
+    height:250px;
+    background-size: cover; 
+    
+}
+#main .slide2 .text{
+    color:#42000A;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding:10px;
+    top:30%;
+    position: relative;
+}
+#main .slide2 .text h2 {
+    font-size: 25px;
+    left:20%;
+    
+    position:absolute;
+}      
+#main .slide2 .text >p{
+    font-size: 15px;
+    left:40%;
+    position:absolute;
+}
+#main .slide2 .bean{
+    position:absolute;
+    width:15%;
+    top:-120%; 
+    right:15%;
+}
+#main .slide .bean:hover {
+    top:8px; 
+    transition:all 0.5s
+}
+
+#main .middle1{
+    text-align: center;
+    padding-top: 60px;
+    max-width: 1020px;
+    margin:100px auto;
+    position:relative;
+}
+#main .middle1 .store{
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    color:#42000A;
+}
+#main .middle1 .store >li{
+    float:left;
+    width:49%;
+    height:600px;
+    position:relative;
+}
+
+#main .storetext1{
+    position:relative;
+}
+#main .storetext1 .money >h1{
+    position:absolute;
+    font-size:60px;
+    padding:180px 0 ;
+    font-weight: 500px;
+    letter-spacing: -4px;
+}
+#main .storetext1 .money >span{
+    font-size:30px;
+    font-weight: bold;
+    padding:210px 90px 0 0;
+    left:160px; 
+    letter-spacing: -4px;
+    position: absolute; 
+}
+#main .storetext1 > h3 {
+    position: absolute;
+    text-align: left;
+    left:40px;
+    top:100px;
+}
+#main .storetext1 > span{
+    position: absolute;
+    color:#F46022;
+    text-align: left;
+    top:100px;
+}
+#main .storetext1 >h3{
+    font-size:30px;
+    line-height: 1.1em;
+}
+#main .storetext1 >p{
+    font-size:16px;
+    padding:35% 60% 0 0;
+    top:85px;
+    position: absolute;
+    left:40px;
+    text-align: left;
+    letter-spacing:1px;
+    
+}
+#main .storetext2 {
+    color:#fff;
+    padding: 70px 0;
+    
+    
+}
+#main .storetext2 >h2{
+    color:#ffe431;
+    font-size: 30px;
+    padding-bottom:10%;
+}
+#main .storetext2 >span:nth-child(1){
+    font-size: 23px;
+}
+#main .storetext2 >span:nth-child(4){
+   font-weight: bold;
+   
+}
+
+#main .storetext2 >span:nth-child(6){
+    font-weight: bold;
+ }
+
+#main .store .moreview{
+    position:absolute;
+    bottom:10px ;
+    left:10px;
+    right:10px;
+    padding:20px 80px;
+    text-align:right;
+    background:#333;
+    color:#fff;
+}
+
+#main .middle1 .store > li:nth-child(1){
+    background: #ffe431 url(../images/외부.png) no-repeat right 200px;  
+    background-size:100%;
+    margin-right: 1%;
+}
+#main .middle1 .moreview{
+    position: absolute;
+    right:10px;
+}
+#main .middle1 .moreview::after {
+    
+    content:'\f054';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+    position: absolute;
+    top: 36%;
+    right:57px;
+}
+
+#main .store >li:nth-child(2){
+    background:#257be0  url(../images/프랜차이즈론-이미지-수정.png) no-repeat center 100px;
+    background-size:90%;
+    margin-left: 1%;
+}
+
+#main .middle2 .open{
+    background:#fef9e6 url(../images/매장-3.png) no-repeat ; 
+    background-size: cover; 
+    padding:120px 0;
+}
+#main .middle2 .open ul{
+    overflow:hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#main .middle2 .open .row2 >p {
+    color:#1b76bc;
+    font-weight: 550;
+    text-align: center;
+    font-size: 26px;
+}
+
+#main .middle2 .open li {
+    width:25%;
+    float:left;
+    font-weight: bolder;
+    font-size: 13px;
+    padding: 50px 0 50px 50px;
+}
+#main .middle2 .menu {
+    
+    background: #Fee8eb ;
+    padding:80px 0;
+   
+}
+#main .middle2 .menu .text{
+    width:50%;
+    float:left;
+    background: url(../images/unnamed-file.png) no-repeat;
+    background-size:127px auto;
+    padding-left:100px;
+    font-family: "Noto Sans KR", Sans-serif;
+    position: relative;
+}
+#main .middle2 .menu img{
+    float:right;
+}
+
+#main .middle2 .menu .text >h3 {
+    color: #c53838;
+    font-size:33px;
+    
+}
+#main .middle2 .menu .text  .t2 {
+    color: #c53838;
+    font-size:25px;
+    font-weight: 400;
+    line-height: 1.2em;
+    letter-spacing: -1.4px;
+    padding-bottom:60px;
+    
+}
+#main .middle2 .menu .text .t3{
+    padding-bottom: 60px;
+}
+
+#main .middle2 .menu .t4{
+    font-size:17px;
+    color: #3C000C;
+    font-weight: bold;
+   
+    
+}
+#main .middle2 .menu .t4::after{
+    position: absolute;
+    content:'\f0a9';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+    right: 240px;
+    bottom: 2px;
+    
+}
+#main .middle3{
+    text-align: center; 
+    padding-top: 60px;
+    max-width: 1020px;
+    margin:100px auto;
+    /* position:relative; */
+}
+#main .middle3 .mbottom{
+    overflow: hidden;
+    font-family: 'Noto Sans KR', sans-serif;
+    
+}
+#main .middle3 .mbottom >li{
+    /* float:left; */
+    width:49%;
+    height:700px; 
+}
+#main .middle3 .mbottom > li:nth-child(1){
+    background: #3b2416;
+    background-size:100%;
+    margin-right: 1%;
+    float:left;
+    padding: 0 50px;
+    
+}
+#main .middle3 .mbottom .partner1 > h2{
+    color: #ffe431;
+    font-size:50px;
+    padding:100px 0 50px 0;
+}
+#main .middle3 .mbottom .partner1 p{
+    color:#fff;
+    font-size:17px;
+    font-weight: 300;
+    line-height: 1.6em;
+}
+
+#main .middle3 .mbottom .partner1 .check1{
+    /* color:#fff;
+    font-size:17px;
+    font-weight: 300;
+    line-height: 1.6em; */
+    padding-bottom: 20px;
+}
+#main .middle3 .mbottom .partner1 .check2{
+    padding-bottom: 60px;
+}
+#main .middle3 .mbottom .partner1 .link2{
+    font-weight: bold;
+    font-size: 25px;
+    color: #42000A;
+    background-color: #ffe431;
+    border-radius: 50px;
+    padding: 20px 30px ; 
+}
+
+#main .middle3 .mbottom > li:last-child{
+    float:right;
+    background-size:100%;
+    
+}
+#main .middle3 .mbottom .book{
+    background: #deae8a;
+    height:349px; 
+    margin-bottom:1%;
+    position:relative
+}
+#main .middle3 .mbottom .book img{
+    width:200px;
+    /* z-index: 99; */
+    position: absolute;
+    top:15%;
+    left:10%;
+    
+}
+#main .middle3 .mbottom .book img:hover{
+    transform:scale(1.1);  
+    transition: all 0.5s;
+}
+#main .middle3 .mbottom .book .check3 {
+    text-align: left;
+    font-size: 16px;
+    position: absolute;
+    right:70px;
+    bottom:170px;
+}
+#main .middle3 .mbottom .book .link3{
+    border: 1px solid #42000A;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 12px 35px 12px 24px ;
+    position: absolute;
+    bottom:100px;
+    right: 80px;
+    font-size: 14px;
+    
+    
+}
+#main .middle3 .mbottom .book .link3::after{
+    content:'\f0a9';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900; 
+    right:15px;
+    top:15.5px;
+    position: absolute;
+    
+}
+#main .middle3 .mbottom .bottomsns{
+    background: #F3F3F3 url(../images/아이콘2.png) no-repeat;
+    background-size:480px auto;
+    background-position: 50% 20% ;
+    height:340px;
+    position: relative;
+    
+}
+#main .middle3 .mbottom .bottomsns p{
+    font-family:'Noto Sans KR', sans-serif;
+    color: #42000A;
+    line-height: 1.6em;
+    
+}
+#main .middle3 .mbottom .bottomsns .up {
+    font-size: 30px;
+    position: absolute;
+    top:60px;
+    right:180px;
+}
+#main .middle3 .mbottom .bottomsns .bold{
+    font-weight: bold;
+    font-size:30px;
+    position: absolute;
+    top:90px;
+    right:190px;
+    
+}
+#main .middle3 .mbottom .bottomsns .lighter{
+    font-size: 18px;
+    position: absolute;
+    top:140px;
+    right:100px;
+    font-weight:600;
+}
+#main .partner2 .bottomsns figure{
+    display: inline-block;
+    width:90px;
+    padding: 150px 10px;
+    
+}
+#main .partner2 .bottomsns figcaption{
+    font-size: 14px;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #42000A;
+    font-weight: bold;
+}
