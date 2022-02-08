@@ -1,0 +1,192 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Noto+Sans+KR&family=Shadows+Into+Light&display=swap');
+
+
+/*메인페이지에서 헤더와 푸터 공통구역
+  컨텐츠 박스의 최대넓이 
+  body 태그에 기본글꼴, 크기 등 설정 row */
+
+.row {
+    
+    max-width:1200px; margin:0 auto}
+.row2 {
+    max-width:900px; margin:0 auto
+}
+  
+#header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding:3px 0;
+    background: #fff;
+}    
+
+#header .row {
+    position: relative;
+}
+h1 {
+    float: left;
+    width: 180px;
+    height:27px;
+    padding:10px ;
+    
+}
+
+.depth1 {
+    position:relative;
+    
+}
+#nav .depth1 > li { 
+    float:left;
+    margin:5px;
+    padding:0 50px ; /*자식 a한테도 padding주고 있으니까 상하는 0으로 */  
+    position:relative;
+}
+.depth1 > li > a{ 
+    display:block;
+    padding:20px 15px 15px; /*흰색 줄이기*/
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    font-weight:bold;
+    color: #855D3D;
+    text-align: center;
+    letter-spacing:2px;
+    line-height: 1.5em;
+    border-bottom:3px solid transparent;
+    
+    
+}
+.depth1>li:hover>a{
+    color:#3C000C;
+    border-bottom:2px solid #3C000C;
+    /*밑줄 밑으로 내리는 법*/
+    transition:all 0.3s;
+}
+
+.depth2 { 
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    font-size: 15px;
+    font-weight:bold;
+    color: #855D3D;
+    text-align: center;
+    padding:50px 0;
+    height:500px;
+    display:none;
+    z-index: 999999;
+}
+
+.depth2 >li >a{
+    display:inline-block ;   
+    padding: 10px
+}
+
+.depth1:hover>li>.depth2{
+    display:block; 
+}
+
+
+.depth2>li:hover>a{
+    color:#3C000C;
+   
+}
+
+#nav .decobox{ 
+  position: absolute;
+  top:100%;
+  left:0;
+  width:100%;
+  display:none;
+  height:500px;
+  background: #fff;
+  opacity:0.8;
+  z-index: 999;
+}
+#nav .depth1:hover + .decobox {
+    display:block;
+}
+
+.sns { 
+    float:right;
+    width: 100px;
+    margin-top:25px;
+    
+    
+}
+.sns a {
+    display:inline-block;
+    width:28%; /*사진크기 줄이기*/
+
+}
+.arrow{ /*구조만 arrow에 하기*/
+    z-index:1000;
+    position: fixed;
+    bottom: 20px;
+    right:20px; 
+}
+.arrow a { /*위로 올라가게 하려면 a지목*/
+    display:block;
+    padding:20px 25px ;
+    border-radius: 0.25rem;
+    background-color: #e9ecef ;
+}
+.arrow a::before {
+    content:'\f106';
+    font-family:'Font Awesome 5 Free';
+    font-weight:900;
+    transition:all 0.5s;
+    color: #adb5bd;
+    cursor: pointer; 
+    font-size: 1.3em; 
+}
+.arrow a:hover::before{
+    color:#59595a;
+}
+
+#footer {
+    position:relative;
+    width:100%;
+    background-color: #2C2C2C;
+    color: #989898;
+    font-family: 'Noto Sans KR', sans-serif;
+    height:350px;
+} 
+#footer > div{ /*선길이 줄이기*/
+    max-width:1020px;
+    margin:0 auto;
+}
+#footer  .info { 
+    text-align: center;
+    border-bottom: 1px solid #3F3F3F;
+    width:100% 
+    
+}
+
+#footer .info > li {
+    display: inline-block;
+    padding:38px 25px;      
+}
+  
+
+#footer .bottomlogo{
+    text-align: center;
+    padding:80px 0 20px;
+    
+}
+
+#footer  .company {
+    font-size: 12px;
+    text-align: center;
+       
+}
+
+#footer .copyright {
+    position: absolute; 
+    bottom:13%;
+    left:50%; 
+    transform:translate(-50%, -50%);  
+    font-size:13px;
+}
